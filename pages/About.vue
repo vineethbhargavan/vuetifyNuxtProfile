@@ -37,7 +37,7 @@
             offset-md="1"
           >
             <v-card>
-              <v-img src="/static/project7.png" />
+              <v-img src="/project7.png" />
             </v-card>
           </v-col>
         </v-row>

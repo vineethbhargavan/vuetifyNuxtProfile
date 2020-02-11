@@ -33,7 +33,7 @@
                 <v-hover>
                   <template v-slot="{ hover }">
                     <v-card
-                      :img="`/static/${project.img}`"
+                      :img="`/${project.img}`"
                       class="white--text overflow-hidden"
                       dark
                       height="300"
@@ -92,7 +92,7 @@
             </v-btn>
 
             <v-img
-              :src="`/static/${overlay}`"
+              :src="`/${overlay}`"
               width="800"
               max-width="90vw"
             />

@@ -1,9 +1,9 @@
 <template>
   <v-img
-    v-if="namespace === 'Home'"
+    v-if="namespace === 'index'"
     :height="$vuetify.breakpoint.xsOnly ? '100vh' : '70vh'"
     gradient="to top, rgba(255, 255, 255, .75), rgba(255, 255, 255, .75)"
-    src="/static/hero.jpg"
+    src="/hero.jpg"
   >
     <v-container
       fill-height
@@ -89,6 +89,7 @@
         }
       },
       namespace () {
+        console.log("Namespace: "+this.$route.name)
         return this.$route.name
       },
       title () {

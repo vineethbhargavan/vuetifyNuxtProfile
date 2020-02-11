@@ -8,7 +8,7 @@
     <v-img
       class="shrink"
       max-width="60%"
-      src="/static/alpha-creative-logo.png"
+      src="/alpha-creative-logo.png"
     />
     <v-spacer />
     <template v-if="$vuetify.breakpoint.mdAndUp">
@@ -62,15 +62,15 @@
           text: 'Home'
         },
         {
-          to: '/about-me',
+          to: '/about',
           text: 'About Me'
         },
         {
-          to: '/my-work',
+          to: '/work',
           text: 'My Work'
         },
         {
-          to: '/contact-me',
+          to: '/contact',
           text: 'Contact Me'
         }
       ]

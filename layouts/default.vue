@@ -6,7 +6,11 @@
       <main v-bind="attrs">
         <core-jumbotron />
 
-        <router-view />
+        <v-content>
+          <v-container>
+            <nuxt />
+          </v-container>
+        </v-content>
       </main>
     </v-fade-transition>
 
@@ -15,24 +19,24 @@
 </template>
 
 <script>
-  export default {
-    components: {
-      CoreFooter: () => import('@/components/core/Footer'),
-      CoreJumbotron: () => import('@/components/core/Jumbotron'),
-      CoreToolbar: () => import('@/components/core/Toolbar')
-    },
+export default {
+  components: {
+    CoreFooter: () => import("@/components/core/Footer"),
+    CoreJumbotron: () => import("@/components/core/Jumbotron"),
+    CoreToolbar: () => import("@/components/core/Toolbar")
+  },
 
-    computed: {
-      attrs () {
-        return {
-          key: this.$route.path,
-          style: {
-            minHeight: 'calc(100vh - ' + this.$vuetify.application.top + 'px'
-          }
+  computed: {
+    attrs() {
+      return {
+        key: this.$route.path,
+        style: {
+          minHeight: "calc(100vh - " + this.$vuetify.application.top + "px"
         }
-      }
+      };
     }
   }
+};
 </script>
 
 <style lang="sass">

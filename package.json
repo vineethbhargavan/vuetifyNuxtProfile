@@ -30,5 +30,8 @@
     "sass-loader": "^8.0.0",
     "vue-cli-plugin-vuetify": "^2.0.3",
     "vuetify-loader": "^1.4.3"
+  },
+  "dependencies": {
+    "nuxt": "^2.11.0"
   }
 }
